@@ -19,7 +19,7 @@ const routes = [
     trainName: 'Shatabdi Express',
     duration: '5h 10m',
     price: '₹750',
-    image: 'https://images.unsplash.com/photo-1589962130973-b6b26c61287d?q=80&w=2940&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=3024&auto=format&fit=crop',
   },
   {
     from: 'Kolkata',
@@ -27,7 +27,7 @@ const routes = [
     trainName: 'Duronto Express',
     duration: '17h 40m',
     price: '₹1,450',
-    image: 'https://images.unsplash.com/photo-1468404201840-a8ef3c278a0a?q=80&w=2835&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=3028&auto=format&fit=crop',
   },
   {
     from: 'Mumbai',
