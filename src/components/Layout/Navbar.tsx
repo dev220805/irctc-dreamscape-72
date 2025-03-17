@@ -39,19 +39,19 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/" className="text-gray-700 hover:text-railway-blue font-medium transition-colors flex items-center gap-1">
+          <Link to="/" className={`font-medium transition-colors flex items-center gap-1 ${isScrolled ? 'text-gray-700 hover:text-railway-blue' : 'text-white hover:text-railway-yellow bg-black/30 px-3 py-1 rounded-md'}`}>
             <Home size={18} />
             <span>Home</span>
           </Link>
-          <Link to="/trains" className="text-gray-700 hover:text-railway-blue font-medium transition-colors flex items-center gap-1">
+          <Link to="/trains" className={`font-medium transition-colors flex items-center gap-1 ${isScrolled ? 'text-gray-700 hover:text-railway-blue' : 'text-white hover:text-railway-yellow bg-black/30 px-3 py-1 rounded-md'}`}>
             <Train size={18} />
             <span>Trains</span>
           </Link>
-          <Link to="/bookings" className="text-gray-700 hover:text-railway-blue font-medium transition-colors flex items-center gap-1">
+          <Link to="/bookings" className={`font-medium transition-colors flex items-center gap-1 ${isScrolled ? 'text-gray-700 hover:text-railway-blue' : 'text-white hover:text-railway-yellow bg-black/30 px-3 py-1 rounded-md'}`}>
             <Calendar size={18} />
             <span>My Bookings</span>
           </Link>
-          <Link to="/help" className="text-gray-700 hover:text-railway-blue font-medium transition-colors flex items-center gap-1">
+          <Link to="/help" className={`font-medium transition-colors flex items-center gap-1 ${isScrolled ? 'text-gray-700 hover:text-railway-blue' : 'text-white hover:text-railway-yellow bg-black/30 px-3 py-1 rounded-md'}`}>
             <HelpCircle size={18} />
             <span>Help</span>
           </Link>
