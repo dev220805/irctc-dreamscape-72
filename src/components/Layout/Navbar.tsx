@@ -58,7 +58,11 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" size="icon" className="relative">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className={`relative ${isScrolled ? 'text-gray-700 hover:text-railway-blue hover:bg-gray-100' : 'text-white bg-black/30 hover:text-railway-yellow hover:bg-black/40'}`}
+          >
             <BellRing className="h-5 w-5" />
             <span className="absolute top-0 right-0 h-2 w-2 bg-railway-red rounded-full"></span>
           </Button>
@@ -74,7 +78,11 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className={`md:hidden ${isScrolled ? 'text-gray-700 hover:text-railway-blue hover:bg-gray-100' : 'text-white bg-black/30 hover:text-railway-yellow hover:bg-black/40'}`}
+            >
               <AlignJustify className="h-6 w-6" />
             </Button>
           </SheetTrigger>
